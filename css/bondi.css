@@ -166,4 +166,35 @@ body {
   color: var(--yellow-color);
 }
 
-/* end subscribe */ ;
+/* end subscribe */
+/* start footer */
+.footer {
+  background-color: var(--dark-color);
+}
+.footer .copyright > span {
+  color: var(--green-color);
+}
+.footer .copyright div span {
+  color: var(--yellow-color);
+}
+.footer .contact ul svg {
+  width: 20px;
+  height: 20px;
+}
+.footer .facebook {
+  background-color: #1877f2;
+}
+.footer .linkedin {
+  background-color: #0077b5;
+}
+.footer .github {
+  background-color: #333;
+}
+.footer .twitter {
+  background-color: #1da1f2;
+}
+.copysecion {
+  background-color: var(--dark-color);
+}
+
+/* end footer */
