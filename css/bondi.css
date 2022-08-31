@@ -3,6 +3,7 @@
   --green-color: #33d1cc;
   --red-color: #ff3150;
   --yellow-color: #ffc400;
+  --secion-color: #eff7fa;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -14,6 +15,16 @@ body {
 }
 .main-btn:hover {
   color: var(--yellow-color);
+}
+.main-title:after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--green-color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 /* start navbar */
 .navbar {
@@ -46,8 +57,28 @@ body {
 }
 /* end navbar */
 /* start Landing */
+
 .landing {
   background-color: var(--dark-color);
   min-height: calc(100vh - 72px);
 }
 /* end Landing */
+/* start features */
+.features .icon-holder {
+  height: 200px;
+}
+.features .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.features .icon-holder .number {
+  font-size: 12rem;
+  color: var(--secion-color);
+}
+.features .icon-holder .icon {
+  color: var(--green-color);
+}
+.features .feat h4 {
+  color: var(--yellow-color);
+}
+/* end features */
