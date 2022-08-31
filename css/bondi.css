@@ -124,3 +124,8 @@ body {
   transform: translateX(0);
 }
 /* end ourwork */
+/* start stuf */
+.stuf .description {
+  max-width: 500px;
+}
+/* end stuf */
