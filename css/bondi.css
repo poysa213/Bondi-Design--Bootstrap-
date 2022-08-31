@@ -16,7 +16,7 @@ body {
 .main-btn:hover {
   color: var(--yellow-color);
 }
-.main-title:after {
+.main-title::after {
   content: "";
   width: 120px;
   height: 2px;
@@ -82,3 +82,45 @@ body {
   color: var(--yellow-color);
 }
 /* end features */
+/* Start our work */
+.our-work {
+  background-color: var(--secion-color);
+}
+.our-work ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+.our-work ul li {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+.our-work ul li:not(.active):hover {
+  color: var(--red-color);
+}
+
+.our-work .box {
+  padding: 5px;
+  overflow: hidden;
+  position: relative;
+}
+.our-work .box::before {
+  content: attr(data-work);
+  position: absolute;
+  background-color: rgb(51 209 204 / 76%);
+
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  transition: 0.3s;
+  font-size: 1.5rem;
+  transform: translateX(calc(-100% - 5px));
+}
+
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+/* end ourwork */
